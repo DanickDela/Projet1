@@ -116,7 +116,7 @@ a:hover {
 .informations {
     display: flex;
     flex-direction: column;
-    gap: 35px;
+    gap: 24px;
 }
 
 .info-titre h1 {
@@ -124,12 +124,80 @@ a:hover {
     margin-bottom: 8px;
 }
 
+/*formulaire*/
+
+.form-recherche {
+    display: flex;
+    flex-direction: row;
+    height : 49px;
+    border-radius: 15px;
+
+}
+
+.location {
+    width: 50px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-bg-color);
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.location i {
+  font-size: 18px;
+  color: black;
+}
+
+.in-search {
+    height: 100%;
+    width : 195px;
+    box-sizing: border-box;
+    font-weight: 700px;
+    font-size: 18px;
+    border-top: 1px solid var(--main-bg-color);
+    border-bottom: 1px solid var(--main-bg-color);
+    border-left: none;
+    border-right: none;
+    text-align: center;
+}
+
+.in-search::placeholder {
+    color: black;
+}
+
+.sub-recherche {
+    width: 132px;
+    height: 100%;
+    background-color: var(--main-color);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    color: white;
+    border: none;
+    font-weight: 700px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.sub-recherche i {
+    font-size: 18px;
+    display: none;
+}
+
+.texte-btn {
+    display: inline;
+}
+
+/* filtres économique ...*/
+
 .filters {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
     gap: 15px;
+    text-align: center;
 }
 
 .filters button {
@@ -320,4 +388,8 @@ a:hover {
     border-bottom: 2px solid var(--main-color);
 }
 
+/* Bouton formulaire, passage d'un texte à un icone*/
+
+.texte-btn {
+    display: none;
 }

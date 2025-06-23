@@ -17,6 +17,7 @@
 <body>
   
     <div class="main-container">
+
         <header>
             <img src="images/logo/Booki.png" alt="Logo Booki"/>
             <!-- Menu de navigation-->
@@ -34,10 +35,15 @@
                 </div>
              
                 <!-- Filtres recherche ville et propriétés de l'hébergement-->
-                <form>
-                    <i class="fa-solid fa-location-dot"></i>
-                    <input type="text" placeholder="Marseille, France" />
-                    <button type="submit">Rechercher</button>
+                <form action="" method="post" class="form-recherche">
+                    <div class ="location">   
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <input type="text" name = "filtre" placeholder="Marseille, France" required class="in-search"/>
+                    <button type = "submit"class="sub-recherche">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <span class="texte-btn">Rechercher</span>
+                    </button>                   
                 </form>
 
 

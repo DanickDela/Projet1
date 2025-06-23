@@ -351,26 +351,35 @@ a:hover {
 
 /* activités */
 .activites {
-    padding:30px;
+   width: 100%;
 }
 
-.activites-card{
+.activites-card {
     display :flex;
-    flex-direction: row;
-    justify-content:space-between;
+    flex-direction:row;
+    padding: 30px;
     gap:30px;
 }
 
-.activites-card div {
+.activites-card .card {
+    width: 270.5px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+}
 
-    border-radius: 20;
+.act-content {
+    padding: 20px 19px;
+    font-weight: 700;
+    font-size: 14px;
 }
 
 .activites img {
     height: 380px;
-    width: 297.5px;
+    width : 100%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    object-fit: cover;
 }
 
 /* footer */
@@ -379,7 +388,6 @@ a:hover {
     flex-direction: row;
     justify-content: space-around;
 }
-
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */

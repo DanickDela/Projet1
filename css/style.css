@@ -1,4 +1,9 @@
 /****** General ***********/
+
+* {
+    margin: 0;
+}
+
 * {
     font-family: 'Raleway', sans-serif;
 }
@@ -26,7 +31,7 @@ body {
 .main-container {
     width: 100%;
     max-width: 1440px;
-    padding: 0 50px;
+    padding: 0 0px;
     box-sizing: border-box;
 }
 
@@ -35,6 +40,9 @@ a {
     text-decoration: none;
 }
 
+p {
+    font-size: 16px;
+}
 .section-title {
     margin: 0;
     font-size: 22px;
@@ -63,7 +71,7 @@ a {
     color: var(--main-bg-color)
 }
 
-/*header*/
+/* configutation header*/
 
 header {
     height: 79px;
@@ -75,10 +83,7 @@ header {
 header img {
     width: 61px;
     height: 19px;
-    padding-top: 30px;
-    padding-right: 50px;
-    padding-bottom: 30px;
-    padding-left: 50px;
+    padding: 30px 0px;
     gap:10px;
 
 }
@@ -86,27 +91,63 @@ header img {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: 50px;
-    padding-right: 50px;
     gap: 68px;
     font-size:16px;
 }
 
-
 .menu-text {
-  padding-top: 20px;
+  height: 35px;
   text-decoration: none;
-  border-top: 2px solid transparent; /* essai*/
+  padding-top: 17px;
+  padding-bottom: 18px;
+  border-top: 2px solid transparent;
 }
 
 .menu-text:hover {
     border-top: 2px solid var(--main-color);
 }
 
-
 a:hover {
   color: var(--main-color); 
 }
+
+/* configuration des filtres et information */
+
+.informations {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.info-titre h1 {
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.filters {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+}
+
+.filters button {
+    background-color: white;
+    border-style: solid;
+    border : 2px solid "#D9D9D9";
+    border-radius: 25px;
+    text-align: center;
+    padding: 4px 19px;
+    font-size: 17px;
+    font-weight: bold;
+
+}
+
+.filters button:hover {
+    background-color: var(--filter-bg-color);
+}
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
@@ -198,13 +239,20 @@ a:hover {
 /* activités */
 .activites {
     padding:30px;
-    gap:30px;
 }
+
 .activites-card{
     display :flex;
     flex-direction: row;
-    padding: 30px;
+    justify-content:space-between;
+    gap:30px;
 }
+
+.activites-card div {
+
+    border-radius: 20;
+}
+
 
 .activites img {
     height: 380px;
@@ -262,4 +310,14 @@ a:hover {
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
     /* ... */
+
+.menu-text {
+    border-bottom: 2px solid transparent;
+  }
+
+.menu-text:hover {
+    border-top: none;
+    border-bottom: 2px solid var(--main-color);
+}
+
 }
